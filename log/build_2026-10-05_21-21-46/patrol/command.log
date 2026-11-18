@@ -1,0 +1,1 @@
+Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/src/patrol -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/patrol

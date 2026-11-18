@@ -1,0 +1,4 @@
+Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive': /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/safedrive -- -j24 -l24
+Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive' returned '0': /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/safedrive -- -j24 -l24
+Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive': /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/build/safedrive
+Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive' returned '0': /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/build/safedrive

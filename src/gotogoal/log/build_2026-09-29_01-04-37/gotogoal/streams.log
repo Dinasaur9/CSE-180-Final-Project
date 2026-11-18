@@ -1,0 +1,8 @@
+[0.010s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal -- -j24 -l24
+[0.031s] [31mCMake Error at CMakeLists.txt:11 (ament_target_dependencies):
+[0.031s]   Unknown CMake command "ament_target_dependencies".
+[0.031s] 
+[0.032s] [0m
+[0.032s] -- Configuring incomplete, errors occurred!
+[0.033s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.036s] Invoked command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal -- -j24 -l24

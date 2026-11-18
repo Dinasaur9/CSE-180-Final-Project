@@ -1,0 +1,4 @@
+source;share/gotogoal/local_setup.bash
+source;share/gotogoal/local_setup.dsv
+source;share/gotogoal/local_setup.sh
+source;share/gotogoal/local_setup.zsh

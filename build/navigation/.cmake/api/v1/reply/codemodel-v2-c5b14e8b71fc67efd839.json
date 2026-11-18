@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e87765d37ea566161070.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "navigation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_uninstall-883f3a183d42d5259bbb.json",
+					"name" : "navigation_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigator-27efe38170e1d99a5ae0.json",
+					"name" : "navigator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testnavigation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testnavigation-bbf2be21baa5a25b1cb3.json",
+					"name" : "testnavigation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testpackage::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testpackage-f395561f67d47e4b6910.json",
+					"name" : "testpackage",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-609f5969785232911a6a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mtabel/UCM/CSE180/CSE180/build/navigation",
+		"source" : "/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/src/navigation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

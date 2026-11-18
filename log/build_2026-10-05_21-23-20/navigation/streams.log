@@ -1,0 +1,4 @@
+[0.160s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/navigation -- -j24 -l24
+[0.200s] [ 37%] Built target testnavigation
+[0.200s] [ 62%] Built target navigator
+[0.206s] [100%] Built target testpackage

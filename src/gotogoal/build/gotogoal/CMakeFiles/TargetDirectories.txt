@@ -1,0 +1,10 @@
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/uninstall.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/gotogoal_uninstall.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/gotogoal.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/test.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/edit_cache.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/rebuild_cache.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/list_install_components.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/install.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/install/local.dir
+/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal/CMakeFiles/install/strip.dir

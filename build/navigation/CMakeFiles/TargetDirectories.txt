@@ -1,0 +1,12 @@
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/uninstall.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/navigation_uninstall.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/navigator.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/testnavigation.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/testpackage.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/test.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/edit_cache.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/rebuild_cache.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/list_install_components.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/install.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/install/local.dir
+/home/mtabel/UCM/CSE180/CSE180/build/navigation/CMakeFiles/install/strip.dir

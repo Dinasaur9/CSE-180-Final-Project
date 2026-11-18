@@ -1,0 +1,50 @@
+[0.012s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal -- -j24 -l24
+[0.040s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.227s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.364s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.370s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.377s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.387s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.435s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.436s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.596s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.726s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.750s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.771s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.854s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.854s] -- Configured cppcheck include dirs: 
+[0.854s] -- Configured cppcheck exclude dirs and/or files: 
+[0.855s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.855s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.856s] -- Added test 'lint_cmake' to check CMake code style
+[0.857s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.863s] -- Added test 'uncrustify' to check C / C++ code style
+[0.863s] -- Configured uncrustify additional arguments: 
+[0.864s] -- Added test 'xmllint' to check XML markup files
+[0.865s] -- Configuring done (0.8s)
+[0.874s] -- Generating done (0.0s)
+[0.877s] -- Build files have been written to: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal
+[0.907s] [ 50%] [32mBuilding CXX object CMakeFiles/gotogoal.dir/src/gotogoal.cpp.o[0m
+[7.919s] [100%] [32m[1mLinking CXX executable gotogoal[0m
+[8.208s] [100%] Built target gotogoal
+[8.221s] Invoked command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal -- -j24 -l24
+[8.230s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal
+[8.237s] -- Install configuration: ""
+[8.237s] -- Installing: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/lib/gotogoal/gotogoal
+[8.242s] -- Set non-toolchain portion of runtime path of "/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/lib/gotogoal/gotogoal" to ""
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/ament_index/resource_index/package_run_dependencies/gotogoal
+[8.242s] -- Installing: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/ament_index/resource_index/parent_prefix_path/gotogoal
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/environment/ament_prefix_path.sh
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/environment/ament_prefix_path.dsv
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/environment/path.sh
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/environment/path.dsv
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/local_setup.bash
+[8.242s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/local_setup.sh
+[8.243s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/local_setup.zsh
+[8.243s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/local_setup.dsv
+[8.243s] -- Installing: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/package.dsv
+[8.243s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/ament_index/resource_index/packages/gotogoal
+[8.243s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/cmake/gotogoalConfig.cmake
+[8.243s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/cmake/gotogoalConfig-version.cmake
+[8.243s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/install/gotogoal/share/gotogoal/package.xml
+[8.244s] Invoked command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal

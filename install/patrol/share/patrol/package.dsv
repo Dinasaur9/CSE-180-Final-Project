@@ -1,0 +1,8 @@
+source;share/patrol/hook/cmake_prefix_path.ps1
+source;share/patrol/hook/cmake_prefix_path.dsv
+source;share/patrol/hook/cmake_prefix_path.sh
+source;share/patrol/local_setup.bash
+source;share/patrol/local_setup.dsv
+source;share/patrol/local_setup.ps1
+source;share/patrol/local_setup.sh
+source;share/patrol/local_setup.zsh

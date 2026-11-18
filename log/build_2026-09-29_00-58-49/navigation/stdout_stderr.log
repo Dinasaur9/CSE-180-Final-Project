@@ -1,0 +1,11 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/navigator.dir/src/navigation.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/testpackage.dir/src/testpackage.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/testnavigation.dir/src/testnavigator.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/testpackage.dir/src/navigation.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/testnavigation.dir/src/navigation.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable testpackage[0m
+[ 87%] [32m[1mLinking CXX executable testnavigation[0m
+[ 87%] Built target testpackage
+[ 87%] Built target testnavigation
+[100%] [32m[1mLinking CXX static library libnavigator.a[0m
+[100%] Built target navigator

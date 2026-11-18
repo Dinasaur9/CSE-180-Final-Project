@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/patrol.dir/src/patrol.cpp.o[0m
+[100%] [32m[1mLinking CXX executable patrol[0m
+[100%] Built target patrol
+-- Install configuration: ""
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/lib/patrol/patrol
+-- Set non-toolchain portion of runtime path of "/home/mtabel/UCM/CSE180/CSE180/install/patrol/lib/patrol/patrol" to ""
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/ament_index/resource_index/package_run_dependencies/patrol
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/ament_index/resource_index/parent_prefix_path/patrol
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/environment/ament_prefix_path.sh
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/environment/ament_prefix_path.dsv
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/environment/path.sh
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/environment/path.dsv
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/local_setup.bash
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/local_setup.sh
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/local_setup.zsh
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/local_setup.dsv
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/package.dsv
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/ament_index/resource_index/packages/patrol
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/cmake/patrolConfig.cmake
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/cmake/patrolConfig-version.cmake
+-- Installing: /home/mtabel/UCM/CSE180/CSE180/install/patrol/share/patrol/package.xml

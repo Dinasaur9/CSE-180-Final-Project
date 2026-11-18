@@ -1,0 +1,10 @@
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/uninstall.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/safedrive_uninstall.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/safedrive.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/test.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/edit_cache.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/rebuild_cache.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/list_install_components.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/install.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/install/local.dir
+/home/mtabel/UCM/CSE180/CSE180/build/safedrive/CMakeFiles/install/strip.dir

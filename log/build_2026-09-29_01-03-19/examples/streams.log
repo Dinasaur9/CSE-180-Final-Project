@@ -1,0 +1,70 @@
+[0.038s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/examples -- -j24 -l24
+[0.240s] [ 13%] Built target subarray
+[0.242s] [ 13%] Built target pubsubstl
+[0.243s] [ 13%] Built target sendarray
+[0.243s] [ 18%] Built target submatrix
+[0.243s] [ 22%] Built target sendmatrix
+[0.243s] [ 27%] Built target geom
+[0.243s] [ 31%] Built target tflistener
+[0.243s] [ 36%] Built target drawsquare
+[0.243s] [ 45%] Built target republishpose
+[0.243s] [ 45%] Built target pubsub
+[0.244s] [ 50%] Built target drawsquarefb
+[0.244s] [ 54%] Built target paramevent
+[0.244s] [ 63%] Built target paramclient
+[0.244s] [ 63%] Built target pubscan
+[0.244s] [ 70%] Built target listeneroop
+[0.245s] [ 72%] Built target servicecall
+[0.245s] [ 77%] Built target tfbroadcaster
+[0.245s] [ 81%] Built target convert
+[0.245s] [ 86%] Built target talkeroop
+[0.245s] [ 90%] Built target actioncall
+[0.245s] [ 95%] Built target resetparticles
+[0.245s] [100%] Built target talkerooptimer
+[0.250s] Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/examples -- -j24 -l24
+[0.258s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/build/examples
+[0.270s] -- Install configuration: ""
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/sendarray
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/subarray
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/sendmatrix
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/submatrix
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/pubsub
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/pubsubstl
+[0.270s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/pubscan
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/drawsquare
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/drawsquarefb
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/geom
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/republishpose
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/tflistener
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/tfbroadcaster
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/paramclient
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/paramevent
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/servicecall
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/listeneroop
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/talkeroop
+[0.271s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/convert
+[0.272s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/talkerooptimer
+[0.272s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/actioncall
+[0.272s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/lib/examples/resetparticles
+[0.273s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch
+[0.274s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch/param.launch.xml
+[0.274s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch/parameters.yaml
+[0.274s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch/paramfile.launch.py
+[0.274s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch/tlremap.launch.xml
+[0.274s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch/paramfile.launch.xml
+[0.275s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/launch/turtlepython.launch.py
+[0.275s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/ament_index/resource_index/package_run_dependencies/examples
+[0.275s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/ament_index/resource_index/parent_prefix_path/examples
+[0.275s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/environment/ament_prefix_path.sh
+[0.275s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/environment/ament_prefix_path.dsv
+[0.275s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/environment/path.sh
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/environment/path.dsv
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/local_setup.bash
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/local_setup.sh
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/local_setup.zsh
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/local_setup.dsv
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/package.dsv
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/ament_index/resource_index/packages/examples
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/cmake/examplesConfig.cmake
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/cmake/examplesConfig-version.cmake
+[0.276s] -- Up-to-date: /home/mtabel/UCM/CSE180/CSE180/install/examples/share/examples/package.xml

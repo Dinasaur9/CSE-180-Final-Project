@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-80ce9a99916ba08dc3a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "multipletopics",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "multipletopics_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multipletopics_uninstall-1c9dde898eb54cb2a652.json",
+					"name" : "multipletopics_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multipublish::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multipublish-e88ef27e895e74e66168.json",
+					"name" : "multipublish",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multisub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multisub-c04b6673a4283c57da22.json",
+					"name" : "multisub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8029bcbab6f1ee46068e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mtabel/UCM/CSE180/CSE180/build/multipletopics",
+		"source" : "/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/src/multipletopics"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

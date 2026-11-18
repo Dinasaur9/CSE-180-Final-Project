@@ -1,0 +1,10 @@
+[0.010s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal -- -j24 -l24
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/gotogoal.dir/src/gotogoal.cpp.o[0m
+[0.064s] [01m[K/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/src/gotogoal.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.064s]     1 | #include [01;31m[K<rclcpp/rclcpp.hpp>[m[K
+[0.064s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.065s] compilation terminated.
+[0.065s] gmake[2]: *** [CMakeFiles/gotogoal.dir/build.make:76: CMakeFiles/gotogoal.dir/src/gotogoal.cpp.o] Error 1
+[0.065s] gmake[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/gotogoal.dir/all] Error 2
+[0.065s] gmake: *** [Makefile:146: all] Error 2
+[0.067s] Invoked command in '/home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/src/gotogoal/build/gotogoal -- -j24 -l24

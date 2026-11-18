@@ -1,0 +1,268 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ca5515bca7983407e25b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "actioncall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-actioncall-92247fa8c50fe589442f.json",
+					"name" : "actioncall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "convert::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-convert-5c12f05dc0065bce4e3f.json",
+					"name" : "convert",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drawsquare::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drawsquare-46ad72b9948e0e3b2e58.json",
+					"name" : "drawsquare",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drawsquarefb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drawsquarefb-fba6ca9a5ca3a682ae5a.json",
+					"name" : "drawsquarefb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "examples_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-examples_uninstall-2ab012e000dd075f91bb.json",
+					"name" : "examples_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geom-2934291d1beb1611f1ce.json",
+					"name" : "geom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "listeneroop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-listeneroop-48e36672233285d2c269.json",
+					"name" : "listeneroop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paramclient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paramclient-66af51657789f3f64002.json",
+					"name" : "paramclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paramevent::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paramevent-36dbcb1164e4b0ea4de1.json",
+					"name" : "paramevent",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pubscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pubscan-c711f354d992de53d909.json",
+					"name" : "pubscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pubsub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pubsub-80eb4f69e8199aeac1ac.json",
+					"name" : "pubsub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pubsubstl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pubsubstl-33294ee18419e7b3f038.json",
+					"name" : "pubsubstl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "republishpose::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-republishpose-0606469186bb0b10145d.json",
+					"name" : "republishpose",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "resetparticles::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-resetparticles-e48e8ee17567e5793f01.json",
+					"name" : "resetparticles",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sendarray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sendarray-45ab5ce6e91d0ce70f19.json",
+					"name" : "sendarray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sendmatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sendmatrix-8ffe91a8174e60597bde.json",
+					"name" : "sendmatrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "servicecall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-servicecall-4249f272d81dc33e99c0.json",
+					"name" : "servicecall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subarray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subarray-0e2e1e0073e9b063c916.json",
+					"name" : "subarray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "submatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-submatrix-65c858686eeb0ee4902b.json",
+					"name" : "submatrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talkeroop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talkeroop-d34a4b584818e6095f89.json",
+					"name" : "talkeroop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talkerooptimer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talkerooptimer-1380b1b373058514f7d9.json",
+					"name" : "talkerooptimer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tfbroadcaster::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tfbroadcaster-b5423d77c12032b16737.json",
+					"name" : "tfbroadcaster",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tflistener::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tflistener-a769752216d4e31966a5.json",
+					"name" : "tflistener",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-eb529a35f9079a071da8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mtabel/UCM/CSE180/CSE180/build/examples",
+		"source" : "/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/src/examples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

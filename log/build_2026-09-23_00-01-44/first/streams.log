@@ -1,0 +1,10 @@
+[0.027s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/first': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/install/gazeboenvs:/home/mtabel/UCM/CSE180/MRTP/MRTP/install/gazeboenvs:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/MRTP/unsorted -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/first
+[0.168s] [33mCMake Warning:
+[0.170s]   Ignoring extra path from command line:
+[0.170s] 
+[0.171s]    "/home/mtabel/UCM/CSE180/CSE180/MRTP/unsorted"
+[0.171s] 
+[0.171s] [0m
+[0.171s] [0mCMake Error: The source directory "/home/mtabel/UCM/CSE180/CSE180/MRTP/unsorted" does not appear to contain CMakeLists.txt.
+[0.171s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.175s] Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/first' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/install/gazeboenvs:/home/mtabel/UCM/CSE180/MRTP/MRTP/install/gazeboenvs:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/MRTP/unsorted -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/first

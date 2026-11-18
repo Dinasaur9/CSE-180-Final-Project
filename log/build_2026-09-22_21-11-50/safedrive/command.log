@@ -1,0 +1,6 @@
+Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/src/safedrive -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/safedrive
+Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/src/safedrive -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/safedrive
+Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/safedrive -- -j24 -l24
+Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/safedrive -- -j24 -l24
+Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/build/safedrive
+Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/mtabel/UCM/CSE180/CSE180/build/safedrive

@@ -1,0 +1,12 @@
+[0.356s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/navigation -- -j24 -l24
+[0.433s] [ 12%] [32mBuilding CXX object CMakeFiles/navigator.dir/src/navigation.cpp.o[0m
+[0.437s] [ 25%] [32mBuilding CXX object CMakeFiles/testpackage.dir/src/testpackage.cpp.o[0m
+[0.448s] [ 37%] [32mBuilding CXX object CMakeFiles/testnavigation.dir/src/testnavigator.cpp.o[0m
+[0.456s] [ 50%] [32mBuilding CXX object CMakeFiles/testpackage.dir/src/navigation.cpp.o[0m
+[0.462s] [ 62%] [32mBuilding CXX object CMakeFiles/testnavigation.dir/src/navigation.cpp.o[0m
+[25.142s] [ 75%] [32m[1mLinking CXX executable testpackage[0m
+[25.442s] [ 87%] [32m[1mLinking CXX executable testnavigation[0m
+[26.121s] [ 87%] Built target testpackage
+[26.487s] [ 87%] Built target testnavigation
+[27.505s] [100%] [32m[1mLinking CXX static library libnavigator.a[0m
+[27.803s] [100%] Built target navigator
