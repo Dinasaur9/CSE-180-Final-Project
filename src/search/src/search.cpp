@@ -129,13 +129,21 @@ int main(int argc, char ** argv)
     navigator->set_parameter(rclcpp::Parameter("use_sim_time", true));
   }
 
-  // Starting pose in map. Defaults = robot spawn pose in tb4_warehouse.launch.py
-  // (also the AMCL initial_pose in nav2_params_wh_tb4.yaml).
+  // Starting pose in the MAP frame. Defaults = AMCL initial_pose in
+  // nav2_params_tb4.yaml (used by tb4_simulation.launch.py, depot world).
   // WaitUntilNav2Active() re-publishes this to /initialpose, so it MUST match
   // where the robot actually is, otherwise AMCL gets reset to the wrong place.
-  const double start_x = navigator->declare_parameter("start_x", 2.12);
-  const double start_y = navigator->declare_parameter("start_y", -21.3);
-  const double start_yaw = navigator->declare_parameter("start_yaw", 1.57);
+  const double start_x = navigator->declare_parameter("start_x", 0.0);
+  const double start_y = navigator->declare_parameter("start_y", 0.0);
+  const double start_yaw = navigator->declare_parameter("start_yaw", 0.0);
+
+  // The waypoints are in Gazebo WORLD coordinates, but Nav2 wants MAP
+  // coordinates. The robot spawns at world (-8, 0) (tb4_simulation.launch.py)
+  // and that spot is map (0, 0), so map = world - spawn + start.
+  const double spawn_world_x = navigator->declare_parameter("spawn_world_x", -8.0);
+  const double spawn_world_y = navigator->declare_parameter("spawn_world_y", 0.0);
+  const double world_to_map_x = start_x - spawn_world_x;
+  const double world_to_map_y = start_y - spawn_world_y;
 
   navigator->SetInitialPose(make_pose(start_x, start_y, start_yaw));
   navigator->WaitUntilNav2Active();
@@ -158,18 +166,20 @@ int main(int argc, char ** argv)
 
   for (size_t i = 0; i < WAYPOINTS.size() && rclcpp::ok(); i++) {
     const Waypoint & wp = WAYPOINTS[i];
+    const double x = wp.x + world_to_map_x;
+    const double y = wp.y + world_to_map_y;
 
     // Arrive facing the direction of travel, so the camera already looks
     // into the new area on the way in.
-    const double yaw = std::atan2(wp.y - prev_y, wp.x - prev_x);
+    const double yaw = std::atan2(y - prev_y, x - prev_x);
 
-    if (go_to(*navigator, wp.x, wp.y, yaw, wp.name)) {
+    if (go_to(*navigator, x, y, yaw, wp.name)) {
       reached++;
       if (wp.spin) {
         look_around(*navigator, wp.name);
       }
-      prev_x = wp.x;
-      prev_y = wp.y;
+      prev_x = x;
+      prev_y = y;
     } else {
       // Move on; the next waypoint is planned from wherever we are.
       RCLCPP_ERROR(navigator->get_logger(),
