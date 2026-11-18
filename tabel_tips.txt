@@ -1,0 +1,70 @@
+Info
+
+CSE-180-Final-Project
+
+source /opt/ros/jazzy/setup.bash
+source ~/UCM/CSE-180-Final-Project/MRTP/install/setup.bash
+source ~/UCM/CSE-180-Final-Project/MRTP/MRTP/install/setup.bash
+
+RESET
+rm -rf build install log
+
+
+echo $AMENT_PREFIX_PATH  # tells you what your sourcing
+rqt_graph # Very Useful
+colcon build from the deepest file directory you can
+
+RUN WAREHOUSE
+ros2 launch gazeboenvs tb4_simulation.launch.py
+
+
+
+
+GOOD TO NOTE: all points are given in world coords;
+the robot sits at 0,-8 at start when odom is activated, odom will read 
+ZERO @ 0, -8
+Points of Interest:
+robot starts at odom 0 0 0 : World Frame
+x -8
+y 0
+z 0
+
+want the robot to travel to:
+Point 1 Back Left
+    x -12.3
+    y 4
+    z 0
+
+Point 2 Back Right
+    x -12.3
+    y -5.3
+    z 0
+
+Point 3 Back Middle before red creates
+    x -0.72
+    y 0.58
+    z 0.00
+
+Point 4 Between Isles red and brown
+    x 4.0
+    y 3.36
+    z ommitted since it never changes
+
+Point 5 Between Isles brown and blue
+    x 8.55
+    y 3.4
+point 6 Behind blue
+    x 11.16
+    y 3.4
+
+point 6 stock pile next to blue
+    x 9.95
+    y -3.7
+
+point 7 middle of stacks
+    x 4.21
+    y -3.7
+
+point 8 stacks close to red
+    x 1.6
+    y -3.7
