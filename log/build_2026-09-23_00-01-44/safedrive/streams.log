@@ -1,4 +1,0 @@
-[0.152s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/safedrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/install/gazeboenvs:/home/mtabel/UCM/CSE180/MRTP/MRTP/install/gazeboenvs:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/safedrive -- -j24 -l24
-[0.208s] [ 50%] [32mBuilding CXX object CMakeFiles/safedrive.dir/src/safedrive.cpp.o[0m
-[5.174s] [100%] [32m[1mLinking CXX executable safedrive[0m
-[5.369s] [100%] Built target safedrive

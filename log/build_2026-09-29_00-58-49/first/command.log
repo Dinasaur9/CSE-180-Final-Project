@@ -1,2 +1,0 @@
-Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/first': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/MRTP/unsorted -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/first
-Invoked command in '/home/mtabel/UCM/CSE180/CSE180/build/first' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/MRTP/unsorted -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/first

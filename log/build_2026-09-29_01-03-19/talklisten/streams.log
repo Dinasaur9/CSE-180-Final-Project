@@ -1,3 +1,0 @@
-[0.220s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/talklisten': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/talklisten -- -j24 -l24
-[0.276s] [ 50%] Built target listener
-[0.277s] [100%] Built target talker

@@ -1,3 +1,0 @@
-[0.219s] Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/multipletopics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/multipletopics -- -j24 -l24
-[0.275s] [ 50%] Built target multisub
-[0.276s] [100%] Built target multipublish

@@ -1,1 +1,0 @@
-Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/install/gazeboenvs:/home/mtabel/UCM/CSE180/MRTP/MRTP/install/gazeboenvs:/opt/ros/jazzy /usr/bin/cmake /home/mtabel/UCM/CSE180/CSE180/MRTP/MRTP/src/navigation -DCMAKE_INSTALL_PREFIX=/home/mtabel/UCM/CSE180/CSE180/install/navigation

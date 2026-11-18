@@ -1,1 +1,0 @@
-Invoking command in '/home/mtabel/UCM/CSE180/CSE180/build/examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mtabel/UCM/CSE180/CSE180/build/examples -- -j24 -l24
