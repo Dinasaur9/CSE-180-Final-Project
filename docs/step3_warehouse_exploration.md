@@ -111,6 +111,18 @@ We used `tf2_echo` to inspect the transformation between the robot's `base_link`
 
 The transformation returned a translation of **(-0.060, 0.000, 0.244) meters** and a rotation of **(-90°, 0°, -90°)** in roll, pitch, and yaw. This indicates that the camera optical frame is located approximately 6 cm behind and 24.4 cm above the robot's base frame origin.
 
+The homogeneous transformation matrix obtained was:
+
+$$
+T_{\text{base}\leftarrow\text{camera}} =
+\begin{bmatrix}
+0 & 0 & 1 & -0.060 \\
+-1 & 0 & 0 & 0.000 \\
+0 & -1 & 0 & 0.244 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
 The rotation matrix was:
 
 $$
