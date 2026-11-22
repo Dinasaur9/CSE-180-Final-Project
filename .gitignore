@@ -10,3 +10,6 @@ __pycache__/
 # IDE files
 .vscode/
 .idea/
+.DS_Store
+src/.DS_Store
+src/search/.DS_Store
