@@ -145,3 +145,94 @@ From this matrix, we confirmed the following axis orientations:
 The frames use different orientations because they serve different purposes. The robot frame follows the standard ROS convention for navigation, while the camera optical frame follows the convention used in computer vision, where the X-axis corresponds to the image's horizontal direction, the Y-axis points down the image, and the Z-axis points in the camera's viewing direction.
 
 **Connection to our project:** When our system detects a person, the RGB image and depth measurements allow us to calculate their 3D position relative to the camera. We can then use TF2 to transform that position into the robot's frame and eventually the warehouse's `map` frame. This is necessary for reporting the person's location in the warehouse rather than only their position relative to the camera.
+
+## 4. What unit does the depth image use? What value does a pixel hold when there is nothing within range?
+
+The depth image is published on `/rgbd_camera/depth_image`
+using `sensor_msgs/msg/Image` with `32FC1` encoding.
+Each pixel contains a 32-bit floating-point depth measurement,
+with valid depth values expressed in **meters (m)**.
+
+When the camera cannot obtain a finite depth measurement, a
+pixel may contain positive infinity (`+inf`). We verified this
+by inspecting an actual depth image from the warehouse simulation.
+
+### Gazebo Camera Configuration
+
+We inspected the OAK-D camera configuration in:
+
+`/opt/ros/jazzy/share/nav2_minimal_tb4_description/urdf/sensors/oakd.urdf.xacro`
+
+The camera's sensor definition includes:
+
+```xml
+<clip>
+  <near>0.3</near>
+  <far>100</far>
+</clip>
+```
+
+This confirms that the simulated RGB-D camera has a configured
+clipping range of **0.3 m to 100 m**.
+
+The configuration also specifies a resolution of 320 × 240
+pixels and an update rate of 10 Hz.
+
+### Experimental Results
+
+We subscribed to `/rgbd_camera/depth_image` and inspected
+one depth frame using a Python script.
+
+| Property | Observed Value |
+|---|---|
+| Resolution | 320 × 240 |
+| Encoding | `32FC1` |
+| Total pixels | 76,800 |
+| Finite pixels | 76,401 |
+| NaN pixels | 0 |
+| Positive infinity pixels | 399 |
+| Negative infinity pixels | 0 |
+| Zero-valued pixels | 0 |
+| Minimum finite depth | 0.4468 m |
+| Maximum finite depth | 46.3631 m |
+| Center pixel depth | 29.4214 m |
+
+Of the 76,800 pixels, 399 contained positive infinity
+(`+inf`), approximately 0.52% of the image.
+
+The finite depth measurements were within the camera's
+configured clipping range of 0.3 m to 100 m.
+
+This confirms that `+inf` is used for at least some missing
+or invalid depth measurements in our simulation. The camera
+configuration does not explicitly specify the reason for
+each invalid pixel.
+
+### Verification Script
+
+We used a ROS2 Python script to inspect the depth image It can be found at `scripts/inspect_depth.py`.
+
+To reproduce the results, launch the warehouse simulation and run:
+
+```bash
+python3 scripts/inspect_depth.py
+```
+
+The numerical results may vary depending on the robot's
+position, camera view, and simulation state.
+
+### Connection to Our Project
+
+Our person-detection system will use RGB images to identify
+people and depth measurements to calculate their 3D positions.
+
+Before using a depth measurement, we must verify that it is
+finite, positive, and within the camera's configured sensing
+range of 0.3 m to 100 m.
+
+If a detected person's depth pixel contains `+inf` or another
+invalid value, we should reject that measurement or select
+another valid pixel from the person's detected region.
+
+This will help prevent incorrect 3D coordinates from being
+reported as person locations in the warehouse.
