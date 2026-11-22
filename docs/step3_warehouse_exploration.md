@@ -325,3 +325,49 @@ If necessary, `CancelTask()` can stop an active task, while
 These methods allow us to build our warehouse search behavior
 without implementing the underlying Nav2 action clients
 ourselves.
+
+## 6. Find the two people already in the world (check the Gazebo entity tree). Write down their positions. You will use them to test your system.
+
+We inspected the Gazebo Entity Tree and located the two
+people already present in the warehouse simulation:
+**Person 1 - Standing** and **Person 2 - Walking**.
+
+By selecting each person in the Entity Tree and checking
+the Pose component, we recorded their positions in the
+Gazebo world coordinate system.
+
+### Recorded Positions
+
+| Entity | X (m) | Y (m) | Z (m) | Yaw (rad) |
+|---|---:|---:|---:|---:|
+| Person 1 - Standing | 1.00 | -1.00 | 0.00 | 1.57 |
+| Person 2 - Walking | -12.00 | 15.00 | 0.00 | 0.00 |
+| TurtleBot4 | 2.12 | -21.30 | 0.00 | 1.57 |
+
+All three entities had roll and pitch values of 0.00 radians.
+
+We also recorded the TurtleBot4's pose because it provides
+a useful reference for understanding the robot's starting
+location relative to the two people.
+
+### Connection to Our Project
+
+These positions will serve as reference coordinates for
+testing our warehouse person-detection system.
+
+Our system will use the RGB camera to detect people and
+the depth image to estimate their 3D positions. We will
+then use TF2 to transform those measurements into a
+common coordinate frame.
+
+By comparing the estimated positions with the positions
+recorded in Gazebo, we can evaluate the accuracy of our
+person-location estimates.
+
+Since Person 2 is labeled as walking, we will also need
+to verify whether its position changes during simulation
+and record its current pose when testing.
+
+We will also verify the relationship between Gazebo's
+world frame and the Nav2 map frame before comparing
+coordinates directly.
