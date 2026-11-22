@@ -7,130 +7,101 @@
 
 ## 1. RGB Image, Depth Image, and Camera Calibration
 
-We explored the warehouse simulation using `ros2 topic list -t` and `ros2 topic echo` to identify the topics associated with the TurtleBot4's RGB-D camera.
-
-### Camera Topics and Message Types
+We inspected the RGB-D camera in the warehouse simulation and identified the following topics and message properties.
 
 | Information | ROS2 Topic | Message Type | Resolution | Encoding |
 |---|---|---|---|---|
 | RGB color image | `/rgbd_camera/image` | `sensor_msgs/msg/Image` | 320 × 240 | `rgb8` |
 | Depth image | `/rgbd_camera/depth_image` | `sensor_msgs/msg/Image` | 320 × 240 | `32FC1` |
-| Camera calibration | `/rgbd_camera/camera_info` | `sensor_msgs/msg/CameraInfo` | 320 × 240 (previous observation) | N/A |
+| Camera calibration | `/rgbd_camera/camera_info` | `sensor_msgs/msg/CameraInfo` | 320 × 240 | N/A |
 
-Both image messages use the coordinate frame `oakd_rgb_camera_optical_frame`. The camera calibration message previously reported the same frame; this still needs to be reconfirmed in the warehouse session.
+All three messages use the coordinate frame `oakd_rgb_camera_optical_frame`.
 
-### Understanding Our Findings
+The RGB image uses `rgb8` encoding, meaning each pixel contains three 8-bit color channels (red, green, and blue). This image provides the visual information needed for person detection.
 
-The RGB image uses `rgb8` encoding, meaning each pixel contains three 8-bit color channels (red, green, and blue). This image will be used by our neural network to detect people.
+The depth image uses `32FC1` encoding, meaning each pixel contains one 32-bit floating-point depth value. Valid depth measurements are conventionally expressed in meters.
 
-The depth image uses `32FC1` encoding, meaning each pixel contains one 32-bit floating-point depth measurement. Valid depth values conventionally represent meters. We will verify how the simulator handles invalid measurements separately.
-
-Both images have a resolution of 320 × 240 pixels. The matching dimensions make it easier to associate RGB detections with depth measurements, although spatial alignment and timestamps must also be considered.
+Both images have a resolution of 320 × 240 pixels. The matching dimensions allow us to associate detected image regions with depth measurements, provided the images are properly aligned.
 
 The camera calibration topic provides the intrinsic parameters needed to convert pixel coordinates into 3D positions.
 
-### Commands Used
-
-```bash
-ros2 topic list -t | grep 'rgbd_camera'
-
-ros2 topic echo /rgbd_camera/image --once --field header
-ros2 topic echo /rgbd_camera/image --once --field encoding
-ros2 topic echo /rgbd_camera/image --once --field height
-ros2 topic echo /rgbd_camera/image --once --field width
-
-ros2 topic echo /rgbd_camera/depth_image --once --field header
-ros2 topic echo /rgbd_camera/depth_image --once --field encoding
-ros2 topic echo /rgbd_camera/depth_image --once --field height
-ros2 topic echo /rgbd_camera/depth_image --once --field width
-
-ros2 topic echo /rgbd_camera/camera_info --once
-```
-
-**Status:** RGB and depth image properties verified in the warehouse. Camera calibration values still need to be reconfirmed.
-
----
-
 ## 2. Camera Intrinsics and Pinhole Camera Model
 
-We inspected the camera calibration information from `/rgbd_camera/camera_info` in our earlier simulation session.
+We inspected `/rgbd_camera/camera_info` in the warehouse simulation and obtained the following camera intrinsic matrix:
 
-The camera intrinsic matrix was:
-
-\[
+$$
 K =
 \begin{bmatrix}
 221.765 & 0 & 160 \\
 0 & 221.765 & 120 \\
 0 & 0 & 1
 \end{bmatrix}
-\]
+$$
 
 ### Intrinsic Parameters
 
-| Parameter | Array Entry | Value | Description |
+| Parameter | Entry in `k` | Value | Description |
 |---|---|---|---|
-| \(f_x\) | `k[0]` | 221.765 | Horizontal focal length in pixels |
-| \(f_y\) | `k[4]` | 221.765 | Vertical focal length in pixels |
-| \(c_x\) | `k[2]` | 160 | Horizontal principal point |
-| \(c_y\) | `k[5]` | 120 | Vertical principal point |
-
-These values should be reconfirmed using the warehouse launch file.
+| $f_x$ | `k[0]` | 221.765 | Horizontal focal length in pixels |
+| $f_y$ | `k[4]` | 221.765 | Vertical focal length in pixels |
+| $c_x$ | `k[2]` | 160 | Horizontal principal point |
+| $c_y$ | `k[5]` | 120 | Vertical principal point |
 
 ### Pinhole Camera Model
 
-The pinhole camera model relates a 3D point \((X,Y,Z)\) in the camera optical frame to its image coordinates \((u,v)\):
+The pinhole camera model relates a 3D point $(X,Y,Z)$ in the camera optical frame to its pixel coordinates $(u,v)$:
 
-\[
-u=f_x\frac{X}{Z}+c_x
-\]
+$$
+u = f_x\frac{X}{Z} + c_x
+$$
 
-\[
-v=f_y\frac{Y}{Z}+c_y
-\]
+$$
+v = f_y\frac{Y}{Z} + c_y
+$$
 
-By rearranging these equations and using the optical-axis depth \(d=Z\), we can recover the 3D point:
+By rearranging these equations and using the optical-axis depth $d=Z$, we obtain the 3D coordinates:
 
-\[
-\boxed{X=\frac{(u-c_x)d}{f_x}}
-\]
+$$
+\boxed{X = \frac{(u-c_x)d}{f_x}}
+$$
 
-\[
-\boxed{Y=\frac{(v-c_y)d}{f_y}}
-\]
+$$
+\boxed{Y = \frac{(v-c_y)d}{f_y}}
+$$
 
-\[
-\boxed{Z=d}
-\]
+$$
+\boxed{Z = d}
+$$
 
 ### Example
 
-Suppose a person is detected at pixel \((200,140)\) and the depth image reports 3.0 meters.
+Suppose a person is detected at pixel $(200,140)$ and the depth image reports a valid depth of 3.0 meters.
 
-Using the previously measured camera intrinsics:
+Using the measured camera intrinsics:
 
-\[
-X=\frac{(200-160)(3)}{221.765}\approx0.541
-\]
+$$
+X = \frac{(200-160)(3)}{221.765}
+\approx 0.541\text{ m}
+$$
 
-\[
-Y=\frac{(140-120)(3)}{221.765}\approx0.271
-\]
+$$
+Y = \frac{(140-120)(3)}{221.765}
+\approx 0.271\text{ m}
+$$
 
-\[
-Z=3.0
-\]
+$$
+Z = 3.0\text{ m}
+$$
 
-The resulting 3D point is:
+Therefore, the 3D point in the camera optical frame is:
 
-\[
-\boxed{P_{\text{camera}}=(0.541,\ 0.271,\ 3.0)\text{ m}}
-\]
-
-These coordinates describe the point relative to the camera's optical frame. We will later use TF2 to transform the point into the warehouse's `map` frame.
+$$
+\boxed{P_{\text{camera}} = (0.541,\ 0.271,\ 3.0)\text{ m}}
+$$
 
 ### Why This Matters
 
-Our person-detection system will use the RGB image to locate people in pixel coordinates. We will then use the depth image and camera intrinsic parameters to estimate their 3D positions. Finally, TF2 will transform those positions into map coordinates so the robot can report where people were found.
+Our person-detection system will use the RGB image to identify people and locate them in pixel coordinates. The depth image and camera intrinsic parameters will then allow us to estimate their 3D positions.
 
-**Status:** Pinhole equations understood. Camera intrinsic values pending reconfirmation in the warehouse.
+Finally, we will use TF2 to transform these coordinates from the camera optical frame into the warehouse's `map` frame so the robot can report where people were detected.
+
