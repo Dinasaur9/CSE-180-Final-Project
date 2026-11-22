@@ -105,3 +105,31 @@ Our person-detection system will use the RGB image to identify people and locate
 
 Finally, we will use TF2 to transform these coordinates from the camera optical frame into the warehouse's `map` frame so the robot can report where people were detected.
 
+## 3. TF2 and Camera Optical Frame Orientation
+
+We used `tf2_echo` to inspect the transformation between the robot's `base_link` frame and the camera's `oakd_rgb_camera_optical_frame`.
+
+The transformation returned a translation of **(-0.060, 0.000, 0.244) meters** and a rotation of **(-90°, 0°, -90°)** in roll, pitch, and yaw. This indicates that the camera optical frame is located approximately 6 cm behind and 24.4 cm above the robot's base frame origin.
+
+The rotation matrix was:
+
+$$
+R =
+\begin{bmatrix}
+0 & 0 & 1 \\
+-1 & 0 & 0 \\
+0 & -1 & 0
+\end{bmatrix}
+$$
+
+From this matrix, we confirmed the following axis orientations:
+
+| Axis | Robot Frame (`base_link`) | Camera Optical Frame |
+|---|---|---|
+| +X | Forward | Right |
+| +Y | Left | Down |
+| +Z | Up | Forward |
+
+The frames use different orientations because they serve different purposes. The robot frame follows the standard ROS convention for navigation, while the camera optical frame follows the convention used in computer vision, where the X-axis corresponds to the image's horizontal direction, the Y-axis points down the image, and the Z-axis points in the camera's viewing direction.
+
+**Connection to our project:** When our system detects a person, the RGB image and depth measurements allow us to calculate their 3D position relative to the camera. We can then use TF2 to transform that position into the robot's frame and eventually the warehouse's `map` frame. This is necessary for reporting the person's location in the warehouse rather than only their position relative to the camera.
