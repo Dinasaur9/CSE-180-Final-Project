@@ -236,3 +236,92 @@ another valid pixel from the person's detected region.
 
 This will help prevent incorrect 3D coordinates from being
 reported as person locations in the warehouse.
+
+## 5. Which action servers does Nav2 offer (ros2 action list)? Read the MRTP navigation package. Which Navigator methods will you need?
+
+
+We ran `ros2 action list -t` while the warehouse simulation
+was running and identified 17 action servers.
+
+| Action Server | Purpose |
+|---|---|
+| `/assisted_teleop` | Assisted manual control with collision avoidance |
+| `/backup` | Move backward |
+| `/compute_and_track_route` | Compute and follow a route |
+| `/compute_path_through_poses` | Plan a path through multiple poses |
+| `/compute_path_to_pose` | Plan a path to one pose |
+| `/compute_route` | Compute a route through a routing graph |
+| `/dock_robot` | Dock the robot |
+| `/drive_on_heading` | Move along a specified heading |
+| `/follow_gps_waypoints` | Follow GPS waypoints |
+| `/follow_path` | Execute a planned path |
+| `/follow_waypoints` | Follow a sequence of waypoints |
+| `/navigate_through_poses` | Navigate through multiple poses |
+| `/navigate_to_pose` | Navigate to one target pose |
+| `/smooth_path` | Smooth a computed path |
+| `/spin` | Rotate in place |
+| `/undock_robot` | Undock the robot |
+| `/wait` | Wait for a specified duration |
+
+The most relevant actions for our warehouse search are
+`/navigate_to_pose` and `/spin`. These allow the robot to
+travel between search locations and rotate to inspect its
+surroundings.
+
+`/navigate_through_poses` is another possible option for
+visiting multiple locations, although our current approach
+uses individual navigation goals.
+
+### MRTP Navigation Package
+
+We inspected the MRTP navigation package, particularly:
+
+- `navigation/include/navigation/navigation.hpp`
+- `navigation/src/navigation.cpp`
+- `navigation/src/testpackage.cpp`
+
+The package provides a `Navigator` class that communicates
+with Nav2 action servers and simplifies navigation commands.
+
+The following methods will be useful for our project:
+
+| Navigator Method | Purpose |
+|---|---|
+| `SetInitialPose()` | Set the robot's initial pose for localization |
+| `WaitUntilNav2Active()` | Wait until AMCL and Nav2 are ready |
+| `GoToPose()` | Send a navigation goal to a warehouse waypoint |
+| `IsTaskComplete()` | Check whether the current action has finished |
+| `GetResult()` | Retrieve the result of the navigation action |
+| `Spin()` | Rotate the robot to inspect its surroundings |
+| `CancelTask()` | Cancel the current action when necessary |
+| `ClearAllCostmaps()` | Clear local and global costmaps during recovery |
+
+We verified that `GoToPose()` sends goals to the
+`/navigate_to_pose` action server using the `map` frame,
+while `Spin()` communicates with the `/spin` action server.
+
+Both methods return after the action goal has been accepted,
+rather than waiting for the robot to complete the movement.
+We therefore need `IsTaskComplete()` and `GetResult()` to
+monitor the task and determine its outcome.
+
+The `Spin()` method accepts an angle in radians and has a
+default value of approximately 1.57 radians (90 degrees).
+
+### Connection to Our Project
+
+Our search system will initialize the robot's localization
+and wait until Nav2 is active. It will then use `GoToPose()`
+to navigate between predefined warehouse search locations.
+
+At each location, the robot can use `Spin()` to rotate and
+inspect its surroundings with the RGB-D camera. We will use
+`IsTaskComplete()` and `GetResult()` to determine when
+navigation or rotation has finished and whether it succeeded.
+
+If necessary, `CancelTask()` can stop an active task, while
+`ClearAllCostmaps()` may help recover from navigation problems.
+
+These methods allow us to build our warehouse search behavior
+without implementing the underlying Nav2 action clients
+ourselves.
